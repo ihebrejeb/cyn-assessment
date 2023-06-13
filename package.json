@@ -7,9 +7,8 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
-    "start:dev": "nest start --watch",
-    "start:client": "cd ./client && yarn add -D vite && yarn start:dev",
+    "start": "nest start --watch",
+    "start:client": "cd ./client && npm i -D vite && npm run start:dev",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
@@ -66,10 +65,5 @@
     "collectCoverageFrom": ["**/*.(t|j)s"],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  },
-  "engines": {
-    "npm": "please-use-yarn",
-    "node": ">=16.0.0 <17.0.0",
-    "yarn": ">=1.22.0 <2.0.0"
   }
 }
