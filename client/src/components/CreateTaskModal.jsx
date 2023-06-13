@@ -1,4 +1,4 @@
-import {  useState } from 'react';
+import { useState } from 'react';
 
 export default function CreateTaskModal({
   // eslint-disable-next-line react/prop-types
@@ -6,10 +6,9 @@ export default function CreateTaskModal({
 }) {
   const [showModal, setShowModal] = useState(false);
 
-  
   const handleSubmit = async () => {
-   const title= document.getElementById('title').value;
-    const description= document.getElementById('description').value;
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
     const task = {
       title,
       description,

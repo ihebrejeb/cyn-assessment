@@ -17,7 +17,7 @@ function Project() {
       >
         &#10554; <span className="text-xs ms-1">Back</span>
       </Link>
-      <CreateTaskModal addTask={addTask}/>
+      <CreateTaskModal addTask={addTask} />
       <div className="flex w-full gap-4 bg-[#4a2d73] rounded-md shadow-md mb-10">
         <img
           src={project.image}
