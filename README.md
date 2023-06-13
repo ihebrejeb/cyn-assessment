@@ -5,9 +5,8 @@
 To start this project run:
 
 ```bash
-  yarn
-  yarn start
-  yarn start:client
+  npm start
+  npm run start:client
 ```
 
 ## Tasks
