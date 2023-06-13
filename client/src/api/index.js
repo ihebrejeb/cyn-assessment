@@ -14,6 +14,4 @@ export const getTasksByProjectId = (projectId) => {
   return axios.get(`${BACKEND_URL}/tasks/project/${projectId}`);
 };
 
-export const createTask = (task) => {
-  return axios.post(`${BACKEND_URL}/tasks/`, task);
-};
+// TODO: add createTask api call

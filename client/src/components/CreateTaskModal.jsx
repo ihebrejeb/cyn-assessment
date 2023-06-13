@@ -1,17 +1,13 @@
 import { useState } from 'react';
+import { PropTypes } from 'prop-types';
 
-export default function CreateTaskModal({
-  // eslint-disable-next-line react/prop-types
-  addTask,
-}) {
+export default function CreateTaskModal({ addTask }) {
   const [showModal, setShowModal] = useState(false);
 
   const handleSubmit = async () => {
-    const title = document.getElementById('title').value;
-    const description = document.getElementById('description').value;
     const task = {
-      title,
-      description,
+      title: 'title',
+      description: 'description',
     };
     await addTask(task);
     setShowModal(false);
@@ -102,3 +98,7 @@ export default function CreateTaskModal({
     </>
   );
 }
+
+CreateTaskModal.propTypes = {
+  addTask: PropTypes.func.isRequired,
+};

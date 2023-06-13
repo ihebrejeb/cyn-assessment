@@ -8,6 +8,10 @@ import { Task } from './entities/task.entity';
 export class TaskController {
   constructor(private readonly taskService: TaskService) {}
 
+  async findOne(): Promise<Task> {
+    return this.taskService.findOne();
+  }
+
   @Post()
   async create(@Body() createTaskDto: CreateTaskDto): Promise<Task> {
     return this.taskService.create(createTaskDto);

@@ -7,7 +7,7 @@ function useProjects() {
     getProjects()
       .then((res) => setProjects(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  });
 
   return {
     projects,
